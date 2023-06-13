@@ -1,0 +1,1 @@
+function submitRating(){var e=document.querySelector('input[name="rating"]:checked'),t=document.getElementById("after-rate"),n=document.getElementById("before-rate"),l=document.getElementById("selectedRating");e?(e=e.value,l.textContent=" "+e+" ",t.style.display="flex",n.style.display="none"):(t.style.display="none",n.style.display="block")}
