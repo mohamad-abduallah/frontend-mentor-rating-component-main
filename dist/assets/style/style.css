@@ -29,7 +29,7 @@ body {
   color: hsl(25, 97%, 53%);
 }
 
-.selectedBtn {
+.notSelectedBtn {
   min-width: 100%;
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
@@ -42,7 +42,7 @@ body {
   cursor: not-allowed;
   text-align: center;
 }
-.selectedBtn:hover {
+.notSelectedBtn:hover {
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
