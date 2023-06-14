@@ -28,7 +28,6 @@ rating.forEach(item => {
                 btn.classList.add('notSelectedBtn');
             });
         });
-
         item.classList.add('selected');
     });
 });
