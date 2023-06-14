@@ -1,1 +1,18 @@
-function submitRating(){var e=document.querySelector('input[name="rating"]:checked'),t=document.getElementById("after-rate"),n=document.getElementById("before-rate"),l=document.getElementById("selectedRating");e?(e=e.value,l.textContent=" "+e+" ",t.style.display="flex",n.style.display="none"):(t.style.display="none",n.style.display="block")}
+function submitRating() {
+    const rating = document.querySelector('input[name="rating"]:checked');
+    const printRating = document.getElementById('after-rate');
+    const beforeRate = document.getElementById('before-rate');
+    const selectedRatingText = document.getElementById('selectedRating');
+    const url = window.location.href;
+    if (rating) {
+        const selectedRating = rating.value;
+        selectedRatingText.textContent = selectedRating;
+        setTimeout(() => {
+            printRating.style.display = 'flex';},
+            250);
+        beforeRate.style.display = 'none';
+    } else {
+        printRating.style.display = 'none';
+        beforeRate.style.display = 'block';
+    }
+}

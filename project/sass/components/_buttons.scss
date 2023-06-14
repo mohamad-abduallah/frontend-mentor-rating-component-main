@@ -1,6 +1,6 @@
 @import "../abstracts/colors";
 @import "../abstracts/variables";
-input[type="button"] {
+.submit-rate {
   min-width: 100%;
   background: $orange;
   color: $bg-withe;
@@ -14,6 +14,7 @@ input[type="button"] {
   text-align: center;
 
   &:hover {
+    transition: all 0.3s ease-in-out;
     background: $bg-withe;
     color: $orange;
   }

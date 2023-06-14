@@ -3,11 +3,13 @@ function submitRating() {
     const printRating = document.getElementById('after-rate');
     const beforeRate = document.getElementById('before-rate');
     const selectedRatingText = document.getElementById('selectedRating');
-
+    const url = window.location.href;
     if (rating) {
         const selectedRating = rating.value;
-        selectedRatingText.textContent = " " + selectedRating + " ";
-        printRating.style.display = 'flex';
+        selectedRatingText.textContent = selectedRating;
+        setTimeout(() => {
+            printRating.style.display = 'flex';},
+            250);
         beforeRate.style.display = 'none';
     } else {
         printRating.style.display = 'none';

@@ -10,7 +10,7 @@ body {
   padding-inline: 16px;
 }
 
-input[type=button] {
+.submit-rate {
   min-width: 100%;
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
@@ -23,7 +23,8 @@ input[type=button] {
   cursor: pointer;
   text-align: center;
 }
-input[type=button]:hover {
+.submit-rate:hover {
+  transition: all 0.3s ease-in-out;
   background: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
 }
@@ -90,6 +91,7 @@ input[type=button]:hover {
   text-align: center;
 }
 .rate-component-main .before-rate .input-rate-main .input-rate label:hover {
+  transition: all 0.3s ease-in-out;
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
