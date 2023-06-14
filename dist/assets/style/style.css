@@ -110,7 +110,7 @@ body {
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
-.rate-component-main .before-rate .input-rate-main .input-rate ul .rate.selected {
+.rate-component-main .before-rate .input-rate-main .input-rate ul .selected {
   background-color: hsl(216, 12%, 54%);
   color: hsl(0, 0%, 100%);
 }
