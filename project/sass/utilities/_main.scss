@@ -51,34 +51,31 @@
       row-gap: 23px;
 
       .input-rate {
-        display: flex;
-        justify-content: space-between;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          padding: unset;
+          margin: unset;
+          .rate {
+            display: flex;
+            list-style: none;
+            background: rgba($lLight-grey, 0.1);
+            padding: 14px 20px;
+            border-radius: 50%;
+            color: rgba($bg-withe, 0.2);
+            cursor: pointer;
+            text-align: center;
 
-        input[type="radio"] {
-          position: absolute;
-          opacity: 0;
-          pointer-events: none;
-          display: none;
-        }
-
-        label {
-          background: rgba($lLight-grey, 0.1);
-          padding: 14px 20px;
-          border-radius: 50%;
-          color: rgba($bg-withe, 0.2);
-          cursor: pointer;
-          text-align: center;
-
-          &:hover {
-            transition: all 0.3s ease-in-out;
-            background: $orange;
+            &:hover {
+              transition: all 0.3s ease-in-out;
+              background: $orange;
+              color: $bg-withe;
+            }
+          }
+          .rate.selected {
+            background-color: $medium-grey;
             color: $bg-withe;
           }
-        }
-
-        input[type="radio"]:checked + label {
-          background-color: $medium-grey;
-          color: $bg-withe;
         }
       }
     }

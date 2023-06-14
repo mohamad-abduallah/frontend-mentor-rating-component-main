@@ -29,6 +29,24 @@ body {
   color: hsl(25, 97%, 53%);
 }
 
+.selectedBtn {
+  min-width: 100%;
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 14px 28px;
+  border-radius: 25px;
+  border: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: not-allowed;
+  text-align: center;
+}
+.selectedBtn:hover {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
 .rate-component-main {
   display: flex;
   flex-direction: column;
@@ -71,17 +89,15 @@ body {
   flex-direction: column;
   row-gap: 23px;
 }
-.rate-component-main .before-rate .input-rate-main .input-rate {
+.rate-component-main .before-rate .input-rate-main .input-rate ul {
   display: flex;
   justify-content: space-between;
+  padding: unset;
+  margin: unset;
 }
-.rate-component-main .before-rate .input-rate-main .input-rate input[type=radio] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  display: none;
-}
-.rate-component-main .before-rate .input-rate-main .input-rate label {
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate {
+  display: flex;
+  list-style: none;
   background: rgba(149, 158, 172, 0.1);
   padding: 14px 20px;
   border-radius: 50%;
@@ -89,12 +105,12 @@ body {
   cursor: pointer;
   text-align: center;
 }
-.rate-component-main .before-rate .input-rate-main .input-rate label:hover {
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate:hover {
   transition: all 0.3s ease-in-out;
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
-.rate-component-main .before-rate .input-rate-main .input-rate input[type=radio]:checked + label {
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate.selected {
   background-color: hsl(216, 12%, 54%);
   color: hsl(0, 0%, 100%);
 }
@@ -159,7 +175,7 @@ body {
     row-gap: 30px;
   }
   .rate-component-main .before-rate .input-rate-main .input-rate {
-    justify-content: center;
+    justify-content: space-between;
     -moz-column-gap: 25px;
     column-gap: 25px;
   }
