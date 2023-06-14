@@ -4,7 +4,6 @@
 .rate-component-main {
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
   background: rgba($dark-blue, 0.2);
   width: 100%;
@@ -97,8 +96,6 @@
       margin-bottom: 24px;
       padding-top: 5px;
     }
-
-
 
     .your-selected {
       display: flex;

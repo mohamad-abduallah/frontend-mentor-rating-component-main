@@ -32,7 +32,6 @@ body {
 .rate-component-main {
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
   background: rgba(37, 45, 55, 0.2);
   width: 100%;
