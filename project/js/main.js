@@ -4,6 +4,7 @@ function submitRating() {
     const beforeRate = document.getElementById('before-rate');
     const selectedRatingText = document.getElementById('selectedRating');
     const url = window.location.href;
+
     if (rating) {
         const selectedRating = rating.value;
         selectedRatingText.textContent = selectedRating;
