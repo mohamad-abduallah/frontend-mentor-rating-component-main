@@ -19,11 +19,11 @@ rating.forEach(element => {
 btn.addEventListener('click' ,() => {
     printRating.classList.add('disFlex');
     beforeRate.classList.add('disNone');
-    btn.disabled = true;
-    btn.classList.add('notSelectedBtn');
 });
 
 relatedBtn.addEventListener('click' ,() => {
     printRating.classList.remove('disFlex');
     beforeRate.classList.remove('disNone');
+    btn.disabled = true;
+    btn.classList.add('notSelectedBtn');
 });
