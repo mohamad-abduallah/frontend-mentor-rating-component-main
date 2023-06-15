@@ -86,9 +86,11 @@ body {
   padding: unset;
   margin: unset;
 }
+.rate-component-main .before-rate .input-rate-main .input-rate ul li {
+  list-style: none;
+}
 .rate-component-main .before-rate .input-rate-main .input-rate ul .rate {
   display: flex;
-  list-style: none;
   background: rgba(149, 158, 172, 0.1);
   padding: 14px 20px;
   border-radius: 50%;

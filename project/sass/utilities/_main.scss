@@ -57,9 +57,11 @@
           justify-content: space-between;
           padding: unset;
           margin: unset;
+          li {
+            list-style: none;
+          }
           .rate {
             display: flex;
-            list-style: none;
             background: rgba($lLight-grey, 0.1);
             padding: 14px 20px;
             border-radius: 50%;
