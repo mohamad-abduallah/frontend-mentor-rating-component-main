@@ -11,7 +11,8 @@
   padding: 30px 24px 30px 24px;
 
   .before-rate {
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     .rate-icon {
       display: flex;
@@ -62,6 +63,7 @@
             background: rgba($lLight-grey, 0.1);
             padding: 14px 20px;
             border-radius: 50%;
+            border: none;
             color: rgba($bg-withe, 0.2);
             cursor: pointer;
             text-align: center;
@@ -72,7 +74,7 @@
               color: $bg-withe;
             }
           }
-          .selected {
+           button:focus {
             background-color: $medium-grey;
             color: $bg-withe;
           }
@@ -124,5 +126,13 @@
 
       };
     }
+  }
+
+  .disFlex {
+    display: flex;
+  }
+
+  .disNone {
+    display: none;
   }
 }
